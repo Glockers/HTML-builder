@@ -12,7 +12,7 @@ readdir(url, {withFileTypes: true}).then(data=>{
             const ext = path.extname(urlFile).slice(1);
             const name = el.name.replace(path.extname(urlFile), "")
             const sizeFile = (stats.size / 1024).toFixed(3);
-            return console.log(`${name}-${ext}-${sizeFile}kb`);
+            return console.log(`${name} - ${ext} - ${sizeFile}kb`);
         });
     })
 })
